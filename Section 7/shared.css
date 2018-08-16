@@ -8,12 +8,12 @@ body {
 }
 
 .main-header {
-    position: fixed;
     width: 100%;
-    background: #2ddf5c;
-    padding: 8px 16px;
+    position: fixed;
     top: 0;
     left: 0;
+    background: #2ddf5c;
+    padding: 8px 16px;
     z-index: 1;
 }
 
@@ -80,35 +80,35 @@ body {
     margin-top: 48px;
 }
 
-.main-footer ul {
+.main-footer__links {
     list-style: none;
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
-.main-footer li {
+.main-footer__link {
     display: inline-block;
     margin: 0 16px;
 }
 
-.main-footer a {
+.main-footer__link a {
     color: white;
     text-decoration: none;
 }
 
-.main-footer a:hover,
-.main-footer a:active {
+.main-footer__link a:hover,
+.main-footer__link a:active {
     color: #ccc;
 }
 
 .button {
-    border-radius: 8px;
-    padding: 8px;
     background: #0e4f1f;
     color: white;
     font: inherit;
-    border: 1px #0e4f1f solid;
+    border: 1.5px solid #0e4f1f;
+    padding: 8px;
+    border-radius: 8px;
     font-weight: bold;
     cursor: pointer;
 }
@@ -116,7 +116,7 @@ body {
 .button:hover,
 .button:active {
     background: white;
-    color: #0e4f1f
+    color: #0e4f1f;
 }
 
 .button:focus {
