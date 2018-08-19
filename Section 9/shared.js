@@ -16,13 +16,23 @@ buttons.forEach(element => {
 var yesButton = document.querySelector('.modal__action');
 var noButton = document.querySelector('.modal__action--negative');
 
-yesButton.addEventListener('click', () => {
-    backdrop.style.display = 'none';
-    modal.style.display = 'none';
+yesButton.addEventListener('click', closeModal);
+noButton.addEventListener('click', closeModal);
+
+var hamburger = document.querySelector('.toggle-button');
+var mobileNav = document.querySelector('.mobile-nav');
+hamburger.addEventListener('click', () => {
+    mobileNav.style.display = "block";
+    backdrop.style.display = "block";
 })
 
-noButton.addEventListener('click', () => {
-    backdrop.style.display = 'none';
-    modal.style.display = 'none';
+backdrop.addEventListener('click', () => {
+    mobileNav.style.display = "none";
+    closeModal();
 })
 
+
+function closeModal() {
+    backdrop.style.display = 'none';
+    modal.style.display = 'none';
+}
