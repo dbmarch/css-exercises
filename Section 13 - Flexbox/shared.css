@@ -40,11 +40,6 @@ main {
   z-index: 1;
 }
 
-.main-header>div {
-  /* display: inline-block; */
-  /* vertical-align: middle; */
-}
-
 .toggle-button {
   width: 3rem;
   background: transparent;
