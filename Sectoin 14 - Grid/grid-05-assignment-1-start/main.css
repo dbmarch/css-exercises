@@ -1,0 +1,42 @@
+body {
+    display: grid;
+    grid-template-columns: 20% auto;
+    grid-template-rows: 3rem auto 3rem;
+    height: 100vh;
+}
+
+.footer {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 3;
+    grid-row-end: span 1;
+    background-color: lightblue;
+    margin: 2px;
+}
+
+.header {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: span 1;
+    background-color: lightblue;
+    margin: 2px;
+}
+
+.sidebar {
+    grid-column-start: 1;
+    grid-column-end: span 1;
+    grid-row-start: 2;
+    grid-row-end: span 1;
+    background-color: lightblue;
+    margin: 2px;
+}
+
+.main {
+    grid-column-start: 2;
+    grid-column-end: span 1;
+    grid-row-start: 2;
+    grid-row-end: span 1;
+    background-color: lightblue;
+    margin: 2px;
+}
